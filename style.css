@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.hearts {
+    background-image: url("./img/hearts.jpg");
+}
+
+.header {
+    filter: blur(0);
+    background-color: rgb(247, 166, 180);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(254, 138, 158);
+    margin-bottom: 20px;
+}
+
+.h-button {
+    color: rgb(169, 77, 93);
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 300px;
+    background-color: rgb(246, 144, 161);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.h-button:hover {
+    transition: 0.5s;
+    background-color: rgb(244, 124, 144);
+    font-size: 15px;
+}
+
+.photos {
+    filter: blur(0);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 270px;
+    width: 200px;
+    border: 2px solid rgb(203, 136, 147);
+    border-style: dashed;
+    border-radius: 15px;
+    position: relative;
+    cursor: none;
+    margin: 10px;
+}
+
+.front {
+    height: 270px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.back, .front {
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+    font-size: 20px;
+    color: rgb(187, 66, 106);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+.card:hover .back {
+    transform: rotateY(0deg);
+}

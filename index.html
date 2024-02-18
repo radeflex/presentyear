@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lika!!!!</title>
+</head>
+
+<body>
+    <div class="hearts">
+    
+    <div class="header">
+        <button class="h-button">У вонючих 1 год!!!!</p>
+    </div>
+    <script>
+        const audio1 = new Audio("./salut1.mp3");
+        const audio2 = new Audio("./salut2.mp3");
+        const audio3 = new Audio("./salut3.mp3");
+        const audio = [audio1, audio2, audio3]
+        const jsConfetti = new JSConfetti();
+        document.querySelector(".h-button").addEventListener("click", async () => {
+            audio[Math.floor(Math.random() * 3)].play()
+            await jsConfetti.addConfetti({
+                emojis: ["💝", "❤️‍🔥", "❤️", "💘", "🎈"],
+                emojiSize: 50,
+                confettiNumber: 1000,
+                confettiColors: [
+                    "#ff0a54",
+                    "#ff477e",
+                    "#ff7096",
+                    "#ff85a1",
+                    "#fbb1bd",
+                    "#f9bec7",
+                ],
+            });
+        });
+    </script>
+    <div class="photos">
+        <div class="card">
+            <img src="./img/n1.jpg" class="front" />
+            <div class="back">
+                <p>Ты мой любимый негрик!!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n2.jpg" class="front" />
+            <div class="back">
+                <p>Мой зайчонок вонючий)))</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n3.jpg" class="front" />
+            <div class="back">
+                <p>Моя дурашка воняшка ::))))</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n4.jpg" class="front" />
+            <div class="back">
+                <p>Мой китёныш :3</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n5.jpg" class="front" />
+            <div class="back">
+                <p>Самый вонючий кот c:</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n6.jpg" class="front" />
+            <div class="back">
+                <p>Самый крутой негер :)</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n7.jpg" class="front" />
+            <div class="back">
+                <p>Мой ласковый писюн ;)))</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n8.jpg" class="front" />
+            <div class="back">
+                <p>Самый нэжный)</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n9.jpg" class="front" />
+            <div class="back">
+                <p>Мой заботливый и милый :=)</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n10.jpg" class="front" />
+            <div class="back">
+                <p>Веселый и креативный B-)</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n11.jpg" class="front" />
+            <div class="back">
+                <p>Эмпатичный и тонкий O^O</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n12.jpg" class="front" />
+            <div class="back">
+                <p>Эмоциональный и душевный 0o0</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n13.jpg" class="front" />
+            <div class="back">
+                <p>И просто моя любов <3< /p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n14.jpg" class="front" />
+            <div class="back">
+                <p>Будь такой, какая ты есть =)</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/n15.jpg" class="front" />
+            <div class="back">
+                <p>Я люблю тебя </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
