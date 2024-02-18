@@ -1,6 +1,7 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    
 }
 
 .hearts {
@@ -8,7 +9,6 @@ body {
 }
 
 .header {
-    filter: blur(0);
     background-color: rgb(247, 166, 180);
     height: 50px;
     width: 100%;
@@ -42,10 +42,8 @@ body {
 }
 
 .photos {
-    filter: blur(0);
     height: 100%;
     width: 100%;
-    padding: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
