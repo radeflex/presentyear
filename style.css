@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    
 }
 
 .hearts {
@@ -92,4 +91,15 @@ body {
 }
 .card:hover .back {
     transform: rotateY(0deg);
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(241, 149, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 73, 73);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
